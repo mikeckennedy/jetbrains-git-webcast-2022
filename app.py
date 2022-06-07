@@ -3,7 +3,7 @@ import flask
 app = flask.Flask(__name__)
 
 
-@app.get('/')
+@app.get('/b')
 def index():
     return "Hello world"
 
