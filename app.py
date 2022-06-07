@@ -9,7 +9,7 @@ print(f'App starting up, version {__VERSION__}')
 
 @app.get('/')
 def index():
-    return "Hello world"
+    return flask.render_template('index.html')
 
 
 @app.get('/about')
