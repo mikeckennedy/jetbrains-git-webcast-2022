@@ -7,7 +7,7 @@ app = flask.Flask(__name__)
 print(f'App starting up, version {__VERSION__}')
 
 
-@app.get('/')
+@app.get('/a')
 def index():
     return flask.render_template('index.html')
 
