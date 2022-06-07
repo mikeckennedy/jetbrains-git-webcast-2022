@@ -16,4 +16,5 @@ def index():
 
 @app.get('/about')
 def about():
+    print("More about")
     return "This is a demo app, it's simple"
