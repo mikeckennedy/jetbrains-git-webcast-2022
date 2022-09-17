@@ -9,9 +9,12 @@ print(f'App starting up, version {__VERSION__}')
 
 @app.get('/')
 def index():
+    # This is the index
+    print("Indexing!")
     return flask.render_template('index.html')
 
 
 @app.get('/about')
 def about():
+    print("More about")
     return "This is a demo app, it's simple"
